@@ -1,21 +1,30 @@
 import React from "react";
-import reactDom from "react-dom";
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
-reactDom.render(
+import Books from "./pages/Books";
+import Categories from "./pages/Categories";
+import Navbar from "./components/Navbar";
+
+ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <header>
+        <Navbar />
+      </header>
       <Switch>
-        <Route>
-          
+        <Route exact path="/Books">
+          <Books />
+        </Route>
+        <Route exact path="/Categories">
+          <Categories />
         </Route>
       </Switch>
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
