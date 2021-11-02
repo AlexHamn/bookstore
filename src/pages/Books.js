@@ -1,15 +1,12 @@
 import React from 'react';
+import BookList from '../components/BookList'
 
 const Books = () => {
   return (
     <>
       <section>
         <h1>Bookstore CMS</h1>
-        <ul>
-          <li>Book1<button>Remove</button></li>
-          <li>Book2<button>Remove</button></li>
-          <li>Book3<button>Remove</button></li>
-        </ul>
+        <BookList />
       </section>
       <section id="addBook">
         <form>
