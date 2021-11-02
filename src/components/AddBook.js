@@ -1,7 +1,7 @@
 const AddBook = () => (
   <section id="addBook">
+    <h2>ADD NEW BOOK</h2>
     <form>
-      <label htmlFor="addBook">ADD NEW BOOK</label>
       <br />
       <input type="text" id="addBook" name="addBook" placeholder="new book" />
       <select name="category" id="category">

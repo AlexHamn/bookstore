@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 const Book = (props) => {
   const {
@@ -16,9 +15,9 @@ const Book = (props) => {
           <p className="category">{category}</p>
         </div>
         <div className="bookActions">
-          <button>Comments</button>
-          <button>Remove</button>
-          <button>Edit</button>
+          <button type="button">Comments</button>
+          <button type="button">Remove</button>
+          <button type="button">Edit</button>
         </div>
       </div>
       <div className="bookCenter">
@@ -31,10 +30,18 @@ const Book = (props) => {
       <div className="bookRight">
         <p>CURRENT CHAPTER</p>
         <p>{currentChapter}</p>
-        <button>UPDATE PROGRESS</button>
+        <button type="button">UPDATE PROGRESS</button>
       </div>
     </article>
   );
+};
+
+Book.propTypes = {
+  title: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  progress: PropTypes.number.isRequired,
+  currentChapter: PropTypes.string.isRequired,
 };
 
 export default Book;
