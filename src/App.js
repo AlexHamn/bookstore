@@ -13,6 +13,7 @@ const App = () => {
   return (
     <Router>
       <header>
+        <h1>Bookstore CMS</h1>
         <Navbar />
       </header>
       <Switch>
