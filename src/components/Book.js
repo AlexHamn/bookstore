@@ -22,7 +22,10 @@ const Book = (props) => {
         </div>
       </div>
       <div className="bookCenter">
-        <p>{progress}%</p>
+        <p>
+          {progress}
+          %
+        </p>
         <p>completed</p>
       </div>
       <div className="bookRight">
