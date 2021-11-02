@@ -28,7 +28,7 @@ const reducer = (state = initialState, action) => {
         not contain the book you want to remove from the store (filter by the id key - i.e.:
         return state.filter(book => book.id !== id);
         */
-      return state.filter((book) => book.id !== action.id);
+      return state.filter((book) => book.id !== action.payload);
 
     default:
       return state;

@@ -10,9 +10,9 @@ const AddBook = () => {
   const submitBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuidv4(), // make sure it's unique
-      title: e.target.addBookAuthor.value,
-      author: e.target.addBook.value,
+      id: uuidv4(),
+      title: e.target.addBook.value,
+      author: e.target.addBookAuthor.value,
     };
     e.target.reset();
     console.log(newBook);
