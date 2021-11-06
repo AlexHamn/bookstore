@@ -11,15 +11,10 @@ const AddBook = () => {
     e.preventDefault();
     const newBook = {
       id: uuidv4(),
-      title: e.target.addBook.value,
+      name: e.target.addBook.value,
       author: e.target.addBookAuthor.value,
-      category: 'tst',
-      progress: 33,
-      currentChapter: 'tsting',
     };
     e.target.reset();
-
-    // dispatch an action and pass it the newBook object (your action's payload)
     dispatch(addBook(newBook));
   };
   return (
