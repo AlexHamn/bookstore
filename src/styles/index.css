@@ -7,7 +7,7 @@
   /* font-weight: bolder; */
   text-decoration: none;
   color: black;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -44,7 +44,11 @@ h1 {
 }
 
 h2 {
-  color: #888888;
+  color: #888;
+}
+
+h3 {
+  margin: unset;
 }
 
 button {
@@ -52,7 +56,7 @@ button {
   width: 4.563rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  font-family: RobotoSlab, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -60,6 +64,7 @@ button {
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+  cursor: pointer;
 }
 
 #books {
@@ -80,18 +85,14 @@ button {
   width: 100%;
 }
 
-
-
 .book {
   background: white;
-  padding: 1%;
+  padding: 4%;
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 98%;
-  /* height: 10.625rem; */
-  /* margin: 2.313rem 6.25rem 0; */
-  /* padding: 2rem 9.188rem 1.625rem 1.688rem; */
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -109,11 +110,34 @@ button {
 .category {
   font-weight: bold;
   color: gray;
+  margin-top: unset;
+  margin-bottom: 0.3rem;
 }
 
 .author {
   font-weight: 300;
   color: #4386bf;
+  margin-top: 0.3rem;
+}
+
+.bookCenter {
+  border-right: solid 1px #e8e8e8;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.bookCenter div:last-of-type {
+  height: min-content;
+}
+
+.bookCenter div:last-of-type p {
+  margin: 0;
+}
+
+.percentage {
+  font-size: 2rem;
 }
 
 .bookRight button {
@@ -133,12 +157,35 @@ button {
   display: flex;
   width: 92%;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 #addBookForm button {
   background: #0290ff;
   color: white;
-  width: auto;
+  width: 15%;
   padding: 0.4rem 1rem;
   border-radius: 3px;
+}
+
+#addBook {
+  width: 25%;
+}
+
+#addBookAuthor {
+  width: 25%;
+}
+
+#category {
+  width: 20%;
+}
+
+.Oval-2 {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 50%;
+  border-color: #0290ff;
+  margin-right: 2rem;
 }

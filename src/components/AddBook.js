@@ -18,8 +18,9 @@ const AddBook = () => {
     dispatch(addBook(newBook));
   };
   return (
-    <section id="addBook">
+    <section id="addBookForm">
       <h2>ADD NEW BOOK</h2>
+      <br />
       <form onSubmit={submitBookToStore}>
         <input type="text" id="addBook" name="addBook" placeholder="new book" />
         <input type="text" id="addBookAuthor" name="addBookAuthor" placeholder="author" />

@@ -15,7 +15,7 @@ const List = () => {
   return (
     <ul id="bookList">
       {books.map((book) => (
-        <li className="book" key={book.id}>
+        <li key={book.id}>
           <Book
             title={book.name}
             category={book.category}
