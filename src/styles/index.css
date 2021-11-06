@@ -1,0 +1,144 @@
+* {
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  /* border-radius: 1%; */
+
+  /* font-weight: bolder; */
+  text-decoration: none;
+  color: black;
+  box-sizing:border-box;
+}
+
+body {
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background: white;
+  margin: 0;
+  padding: 1% 5%;
+  border-bottom: solid 1px #e8e8e8;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  padding: unset;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20vw;
+}
+
+h1 {
+  color: #0290ff;
+}
+
+h2 {
+  color: #888888;
+}
+
+button {
+  all: unset;
+  width: 4.563rem;
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-family: RobotoSlab, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+#books {
+  display: flex;
+  justify-content: center;
+}
+
+#bookList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-bottom: solid 1px #e8e8e8;
+}
+
+#bookList li {
+  width: 100%;
+}
+
+
+
+.book {
+  background: white;
+  padding: 1%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  /* height: 10.625rem; */
+  /* margin: 2.313rem 6.25rem 0; */
+  /* padding: 2rem 9.188rem 1.625rem 1.688rem; */
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.book * {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bookData {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  font-weight: bold;
+  color: gray;
+}
+
+.author {
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.bookRight button {
+  background: #0290ff;
+  color: white;
+  width: auto;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+}
+
+#addBookForm {
+  padding: 0 5%;
+  width: 100%;
+}
+
+#addBookForm form {
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+}
+
+#addBookForm button {
+  background: #0290ff;
+  color: white;
+  width: auto;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+}
