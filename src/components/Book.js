@@ -32,9 +32,8 @@ const Book = (props) => {
       <div className="bookCenter">
         <p>
           {progress}
-          %
+          % completed
         </p>
-        <p>completed</p>
       </div>
       <div className="bookRight">
         <p>CURRENT CHAPTER</p>
@@ -47,11 +46,17 @@ const Book = (props) => {
 
 Book.propTypes = {
   title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  category: PropTypes.string,
   author: PropTypes.string.isRequired,
-  progress: PropTypes.number.isRequired,
-  currentChapter: PropTypes.string.isRequired,
+  progress: PropTypes.number,
+  currentChapter: PropTypes.string,
   id: PropTypes.string.isRequired,
+};
+
+Book.defaultProps = {
+  category: 'Drama',
+  progress: 50,
+  currentChapter: 'Testing',
 };
 
 export default Book;
