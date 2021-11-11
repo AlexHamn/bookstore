@@ -19,9 +19,9 @@ const Book = (props) => {
     <article className="book">
       <div className="bookLeft">
         <div className="bookData">
+          <p className="category">{category}</p>
           <h3>{title}</h3>
           <p className="author">{author}</p>
-          <p className="category">{category}</p>
         </div>
         <div className="bookActions">
           <button type="button">Comments</button>
@@ -30,10 +30,14 @@ const Book = (props) => {
         </div>
       </div>
       <div className="bookCenter">
-        <p>
-          {progress}
-          % completed
-        </p>
+        <div className="Oval-2" />
+        <div>
+          <p className="percentage">
+            {progress}
+            %
+          </p>
+          <p>Completed</p>
+        </div>
       </div>
       <div className="bookRight">
         <p>CURRENT CHAPTER</p>
